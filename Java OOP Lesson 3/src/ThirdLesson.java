@@ -5,7 +5,7 @@ import java.util.*;
 public class ThirdLesson {
     public static void main(String[] args) {
         init();
-        System.out.println("goodbye");
+        System.out.println("goodbye ");
     }
     public static void add(){
         System.out.println("enter first number");
