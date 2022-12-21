@@ -8,8 +8,8 @@ public class ArrayTest {
 
 
         double[] myInitializedList ={2.5, 3.66, 8.49};
-        for (int i = 0; i < myInitializedList.length; i++) {
-            System.out.println(myInitializedList[i]);
+        for (double v : myInitializedList) {
+            System.out.println(v);
         }
     }
 }
