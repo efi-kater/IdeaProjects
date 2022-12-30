@@ -66,7 +66,7 @@ public class HwL5Main {
                 System.out.println(SeasonEnum.Fall);
                 break;
         }
-        int intArray2 []= {0,0,0,0,0};
+        int intArray2 []= new int[6];
         for (int i=0;i<5;i++){
             System.out.println("enter the next number");
             a = new Scanner(System.in);
