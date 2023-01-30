@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cdef1ac-29aa-42d3-b766-767d352a98fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CalcPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DriverSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Constants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/DriverSingleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Tests.class" afterDir="false" />
+    <list default="true" id="9cdef1ac-29aa-42d3-b766-767d352a98fb" name="Changes" comment="Lesson 10 hw">
       <change beforePath="$PROJECT_DIR$/../BuyMeSanity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BuyMeSanity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BuyMeSanity/src/test/java/PagesUtils/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BuyMeSanity/src/test/java/PagesUtils/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +51,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Tests.ex4">
+  <component name="RunManager" selected="TestNG.Tests.ex5">
     <configuration name="Tests.ex1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Lessin10Hw" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,8 +88,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests.ex5" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lessin10Hw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="ex5" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Tests.ex5" />
         <item itemvalue="TestNG.Tests.ex4" />
         <item itemvalue="TestNG.Tests.ex2" />
         <item itemvalue="TestNG.Tests.ex1" />
@@ -118,6 +118,14 @@
       <option name="presentableId" value="Default" />
       <updated>1675105969520</updated>
     </task>
+    <task id="LOCAL‎-00001" summary="Lesson 10 hw">
+      <created>1675113733551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1675113733551</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,5 +138,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson 10 hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 10 hw" />
   </component>
 </project>

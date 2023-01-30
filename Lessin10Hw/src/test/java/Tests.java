@@ -1,14 +1,13 @@
 import com.paulhammant.ngwebdriver.ByAngular;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.lang.Integer.parseInt;
@@ -81,6 +80,35 @@ public class Tests {
         System.out.println(calcPage.SEVEN_WIDTH);
         System.out.println(calcPage.isSixDisplayed());
         assertEquals(parseInt(calcPage.calcSixPlusSeven()),13);
+    }
+
+    @Test
+    public void ex5(){
+        String site1 = "https://www.google.com/";
+        String site2 = "https://www.youtube.com/";
+        String site3 = "https://translate.google.com/";
+        driver.get(site1);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.open();");
+        js.executeScript("window.open();");
+        assertEquals(driver.getCurrentUrl(),site1);
+        ArrayList<String> windows = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(windows.get(1));
+        driver.get(site2);
+        assertEquals(driver.getCurrentUrl(),site2);
+        driver.switchTo().window(windows.get(0));
+        assertEquals(driver.getCurrentUrl(),site1);
+        driver.switchTo().window(windows.get(2));
+        driver.get(site3);
+        assertEquals(driver.getCurrentUrl(),site3);
+
+
+    }
+
+
+    @AfterMethod
+    public void tearDown(){
+        driver.quit();
     }
 
 
