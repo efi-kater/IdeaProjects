@@ -7,8 +7,6 @@
     <list default="true" id="9cdef1ac-29aa-42d3-b766-767d352a98fb" name="Changes" comment="Lesson 10 hw">
       <change beforePath="$PROJECT_DIR$/../BuyMeSanity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BuyMeSanity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +123,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1675113733551</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎-00002" summary="Lesson 10 hw">
+      <created>1675115903974</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1675115903974</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="Lesson 10 hw">
+      <created>1675115913430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1675115913430</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
