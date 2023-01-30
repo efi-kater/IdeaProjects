@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 
@@ -21,7 +20,7 @@ public class SanityTests {
     public void init(){
         this.driver = DriverSingleton.getDriverInstance();
         this.driver.get(Constants.SITE);
-        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(11));
 
 
 

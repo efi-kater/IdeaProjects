@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cdef1ac-29aa-42d3-b766-767d352a98fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CalcPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DriverSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/Constants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/DriverSingleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BuyMeSanity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BuyMeSanity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BuyMeSanity/src/test/java/PagesUtils/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BuyMeSanity/src/test/java/PagesUtils/HomePage.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2L3i3W9q22gPQ5HO1d9osOskxs2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Owner/IdeaProjects/Lessin10Hw/src/test"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Owner\IdeaProjects\Lessin10Hw\src\test" />
+      <recent name="C:\Users\Owner\IdeaProjects\Lessin10Hw" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Tests.ex4">
+    <configuration name="Tests.ex1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lessin10Hw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="ex1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.ex2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lessin10Hw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="ex2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.ex4" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lessin10Hw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="ex4" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Tests.ex4" />
+        <item itemvalue="TestNG.Tests.ex2" />
+        <item itemvalue="TestNG.Tests.ex1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cdef1ac-29aa-42d3-b766-767d352a98fb" name="Changes" comment="" />
+      <created>1675105969520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675105969520</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

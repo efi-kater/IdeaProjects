@@ -10,6 +10,7 @@ public class HomePage extends BasePage {
 
     private WebDriver driver;
     public HomePage(WebDriver driver){
+        this.driver=DriverSingleton.getDriverInstance();
     }
 
 
