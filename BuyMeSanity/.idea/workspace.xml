@@ -4,23 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feab820b-2bf3-46b6-add0-0896ece1d98a" name="Changes" comment="Project Buyme 1 test">
-      <change afterPath="$PROJECT_DIR$/src/Output/Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="feab820b-2bf3-46b6-add0-0896ece1d98a" name="Changes" comment="Lesson 10 hw">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PagesUtils/CategoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PagesUtils/GiftSelectPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PagesUtils/PurchaseCompletePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PagesUtils/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PagesUtils/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Output/Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output/Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PagesUtils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PagesUtils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PagesUtils/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PagesUtils/DriverSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PagesUtils/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PagesUtils/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanityTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PagesUtils/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PagesUtils/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PagesUtils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PagesUtils/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PagesUtils/DriverSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PagesUtils/DriverSingleton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/PagesUtils/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PagesUtils/HomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SanityTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SanityTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lessin10Hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lessin10Hw/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +74,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SanityTests.categoryGiftSelection" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BuyMeSanity" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SanityTests" />
+      <option name="METHOD_NAME" value="categoryGiftSelection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SanityTests.presentSearch" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BuyMeSanity" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,11 +110,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SanityTests.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SanityTests.sendPresent" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BuyMeSanity" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SanityTests" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="METHOD_NAME" value="sendPresent" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,9 +125,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SanityTests.presentSearch" />
-        <item itemvalue="TestNG.SanityTests.registrationFlow" />
         <item itemvalue="TestNG.SanityTests" />
-        <item itemvalue="TestNG.SanityTests.test1" />
+        <item itemvalue="TestNG.SanityTests.registrationFlow" />
+        <item itemvalue="TestNG.SanityTests.sendPresent" />
+        <item itemvalue="TestNG.SanityTests.categoryGiftSelection" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +162,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1675105880186</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary="Lesson 10 hw">
+      <created>1675541179711</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1675541179711</updated>
+    </task>
+    <task id="LOCAL‎-00005" summary="Lesson 10 hw">
+      <created>1675541190252</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1675541190252</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,17 +193,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Project Buyme 1 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Buyme 1 test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/SanityTests.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Lesson 10 hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 10 hw" />
   </component>
 </project>

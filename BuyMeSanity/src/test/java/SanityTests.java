@@ -1,6 +1,4 @@
-import PagesUtils.Constants;
-import PagesUtils.DriverSingleton;
-import PagesUtils.HomePage;
+import PagesUtils.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -12,6 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -51,8 +51,7 @@ public class SanityTests {
         // log results
         test.log(Status.INFO, "@Before class");
         driver = DriverSingleton.getDriverInstance();
-        //driver.get(DriverSingleton.getData("site"));
-        driver.get(Constants.SITE);
+        driver.get(DriverSingleton.getData("site"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 
@@ -60,8 +59,6 @@ public class SanityTests {
 
     @Test
     public void registrationFlow()  {
-        String a =driver.getPageSource();
-        System.out.println(a);
             HomePage homePage = new HomePage();
         try {
             homePage.clickSigninBtn();
@@ -96,13 +93,15 @@ public class SanityTests {
             test.pass("registration test passed");
         } catch (NoSuchElementException e){
             e.printStackTrace();
-            test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
+            test.fail("test failed", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
         }
 }
 
 
-    @Test
+    @Test (dependsOnMethods = { "registrationFlow" })
     public void presentSearch()  {
+        driver.get(DriverSingleton.getData("site"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         HomePage homePage = new HomePage();
         try {
             homePage.clickAmountDd();
@@ -126,6 +125,78 @@ public class SanityTests {
             e.printStackTrace();
             test.fail("details", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
         }
+    }
+
+    @Test (dependsOnMethods = { "presentSearch" })
+    public void categoryGiftSelection(){
+        driver.get(DriverSingleton.getData("site"));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        HomePage homePage = new HomePage();
+        try {
+            homePage.clickBestGiftCard();
+            test.info("clicked on best gifts 2023");
+            WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+            webDriverWait.until(ExpectedConditions.urlContains(Constants.BEST_GIFTS_PAGE));
+            assertEquals(driver.getCurrentUrl(),Constants.BEST_GIFTS_PAGE);
+            test.info("verified new page");
+            CategoryPage categoryPage = new CategoryPage();
+            categoryPage.clickTaizuCard();
+            test.info("click on Taizu gift card");
+            webDriverWait.until(ExpectedConditions.urlContains(Constants.TAIZU_GIFT_PAGE));
+            test.info("verified new page");
+            GiftSelectPage giftSelectPage = new GiftSelectPage();
+            giftSelectPage.setEnterAmountTb("100");
+            test.info("sent keys to amount tb");
+            giftSelectPage.clickSelectBtn();
+            test.info("clicked on a select btn");
+            webDriverWait.until(ExpectedConditions.urlContains(Constants.PURCHASE_COMPLETE_Page));
+            test.info("verified new page");
+            PurchaseCompletePage purchaseCompletePage = new PurchaseCompletePage();
+            assertEquals(purchaseCompletePage.getPurchaseGiftLabel(),"רכישת מתנה");
+            test.info("verified header");
+            test.pass("category gift selection test passed");
+        } catch (NoSuchElementException e){
+        e.printStackTrace();
+        test.fail("test failed", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
+    }
+
+    }
+
+    @Test (dependsOnMethods = { "categoryGiftSelection" })
+    public void sendPresent(){
+        try {
+            WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+            PurchaseCompletePage purchaseCompletePage = new PurchaseCompletePage();
+            purchaseCompletePage.clickToSomeoneElseBtn();
+            test.info("clicked on someone else");
+            purchaseCompletePage.setToTb("Efi");
+            test.info("sent keys to recipient");
+            assertEquals(purchaseCompletePage.getToTb(),"Efi");
+            purchaseCompletePage.clickEventDd();
+            test.info("click on event dd");
+            purchaseCompletePage.clickBDSelect();
+            test.info("clicked on bd selection");
+            purchaseCompletePage.setWishTa("congrats");
+            test.info("sent keys to wish ta");
+            purchaseCompletePage.clickContinueBtn();
+            test.info("clicked continue");
+            webDriverWait.until(ExpectedConditions.urlContains("https://buyme.co.il/money/348972?price=100&step=2"));
+            test.info("verified new page");
+            purchaseCompletePage.clickNowRb();
+            test.info("clicked on now rb");
+            purchaseCompletePage.clickSmsBtn();
+            test.info("clicked on sms button");
+            purchaseCompletePage.setSmsTb("0549253835");
+            test.info("sent keys to sms tb");
+            assertEquals(purchaseCompletePage.getFromTb(),"Efi ");
+            test.info("verified sender");
+            test.pass("test send present passed");
+        }catch (NoSuchElementException e){
+            e.printStackTrace();
+            test.fail("test failed", MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
+        }
+
+
     }
 
     @AfterClass

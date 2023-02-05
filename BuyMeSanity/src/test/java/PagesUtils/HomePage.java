@@ -3,6 +3,7 @@ package PagesUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.locators.RelativeLocator;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -32,37 +33,48 @@ public class HomePage extends BasePage {
 
     private By registerBtn = By.cssSelector("button[type='submit']");
 
-    private By ammountDd = By.cssSelector("div[outerText='סכום']");
+    private By ammountDd = By.cssSelector("span[title='סכום']");
 
     private By amountOption99_199 = By.cssSelector("li[value='2']");
 
-    private By regionDd = By.cssSelector("div[alt='אזור']");
+    private By regionDd = By.cssSelector("span[title='אזור']");
 
     private By regionTelAviv = By.cssSelector("li[value='13']");
 
-    private By categoryDd = By.cssSelector("div[alt='קטגוריה']");
+    private By categoryDd = By.cssSelector("span[title='קטגוריה']");
 
     private By favGifts_2023 = By.cssSelector("li[value='438']");
+    private By presentTypeTb = By.cssSelector("input[placeholder='איזו מתנה תרצו לחפש?']");
 
-    private By searchBtn = By.xpath("/html/body/div[6]/div/header/div[3]/div/div/form/a");
-    private By presentOfTheWeekX = By.xpath("/html/body/div[4]/div/div[2]/button/svg");
+    private By searchBtn = By.xpath("/html/body/div[3]/div/header/div[3]/div/div/form/a");
+
+    private By bestGiftCard = By.cssSelector("div[class='product-card-bg']");
+
 
 
 
 
     public void clickSigninBtn()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(signinBtn));
         super.clickElement(signinBtn);
     }
 
     public void clickRegisterLinkBtn()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(registerLinkBtn));
         super.clickElement(registerLinkBtn);
     }
 
     public void clickRegisterAgreenemtRb()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(registerAgreementRb));
         super.clickElement(registerAgreementRb);
     }
 
     public void clickRegisterBtn()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(registerBtn));
         super.clickElement(registerBtn);
     }
 
@@ -111,34 +123,46 @@ public class HomePage extends BasePage {
     }
 
     public void clickAmountDd()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(ammountDd));
         super.clickElement(ammountDd);
     }
     public void clickAmountOption99_199()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(amountOption99_199));
         super.clickElement(amountOption99_199);
     }
     public void clickRegionDd()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(regionDd));
         super.clickElement(regionDd);
     }
     public void clickRegionTelAviv()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(regionTelAviv));
         super.clickElement(regionTelAviv);
     }
     public void clickCategoryDd()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(categoryDd));
         super.clickElement(categoryDd);
     }
     public void clickFavGifts_2023()  {
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(favGifts_2023));
         super.clickElement(favGifts_2023);
     }
     public void clickSearchBtn()  {
-        super.clickElement(searchBtn);
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(searchBtn));
+        super.clickElement(RelativeLocator.with(By.tagName("a")).toLeftOf(presentTypeTb));
     }
 
-    public void frames(){
-        List< WebElement> list = new ArrayList<>();
-        list = driver.findElements(By.tagName("iframe"));
-        System.out.println(list.size());
+    public void clickBestGiftCard(){
+        WebDriverWait webDriverWait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(bestGiftCard));
+        super.clickElement(bestGiftCard);
     }
-
-
 
 
 }
